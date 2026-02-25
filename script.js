@@ -1,17 +1,14 @@
-// ------------------------------
-// Page Navigation Handler
-// ------------------------------
-
-// Map buttons or elements to pages
+// Main button navigation
 const pageRoutes = {
-  "homeBtn": "index.html",
-  "aboutBtn": "about.html",
-  "projectsBtn": "projects.html",
-  "contactBtn": "contact.html",
-  "learnMoreBtn": "about.html"  // Example: hero "Learn More" button
+  homeBtn: "index.html",
+  aboutBtn: "about.html",
+  aboutBtn2: "about.html",
+  projectsBtn: "projects.html",
+  projectsBtn2: "projects.html",
+  contactBtn: "contact.html",
+  learnMoreBtn: "about.html"
 };
 
-// Add click events to navigate
 Object.keys(pageRoutes).forEach(id => {
   const btn = document.getElementById(id);
   if(btn) {
@@ -21,21 +18,24 @@ Object.keys(pageRoutes).forEach(id => {
   }
 });
 
-// ------------------------------
-// Navbar Active Link Highlight
-// ------------------------------
-const currentPage = window.location.pathname.split("/").pop();
-const navLinks = document.querySelectorAll(".nav-links a");
+// Footer button navigation
+const footerRoutes = {
+  homeBtnFooter: "index.html",
+  aboutBtnFooter: "about.html",
+  projectsBtnFooter: "projects.html",
+  contactBtnFooter: "contact.html"
+};
 
-navLinks.forEach(link => {
-  if(link.getAttribute("href") === currentPage) {
-    link.classList.add("active");
+Object.keys(footerRoutes).forEach(id => {
+  const btn = document.getElementById(id);
+  if(btn) {
+    btn.addEventListener("click", () => {
+      window.location.href = footerRoutes[id];
+    });
   }
 });
 
-// ------------------------------
-// Contact Form Submission
-// ------------------------------
+// Contact form submission
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
@@ -48,9 +48,7 @@ if(contactForm) {
   });
 }
 
-// ------------------------------
-// Optional: Fade-In Animation on Scroll
-// ------------------------------
+// Fade-in animation
 const faders = document.querySelectorAll(".fade-in");
 const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 const appearOnScroll = new IntersectionObserver((entries, observer) => {

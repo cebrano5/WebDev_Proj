@@ -3,38 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lebron James | Portfolio</title>
+  <title>About | Alhamed Cebrano</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Lebron James</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Alhamed Cebrano</div>
+        <ul class="nav-links">
+          <li><button id="homeBtn">Home</button></li>
+          <li><button id="aboutBtn">About</button></li>
+          <li><button id="projectsBtn">Projects</button></li>
+          <li><button id="contactBtn">Contact</button></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Hello, I'm Lebron James</h1>
-        <p>Web Developer | Creating modern, clean, and interactive websites</p>
-        <a href="about.html" class="btn">Learn More</a>
-      </div>
-      <div class="hero-image">
-        <img src="hero-image.svg" alt="Hero Image">
-      </div>
-    </section>
-  </main>
+    <!-- Main Content -->
+    <main>
+      <section class="about-section fade-in">
+        <h1>About Me</h1>
+        <div class="about-content">
+          <!-- Profile Image -->
+          <div class="profile-image">
+            <img src="image/GettyImages-87867496.jpg" alt="Alhamed Cebrano Profile">
+          </div>
 
-  <footer>
-    <p>&copy; 2026 Lebron James</p>
-  </footer>
+          <!-- Text & Skills -->
+          <div class="about-text">
+            <p>Hello! I'm <strong>Alhamed Cebrano</strong>, a passionate web developer who loves turning ideas into interactive, clean, and responsive websites. I specialize in creating websites that are not only functional but also visually appealing.</p>
+
+            <h3>💻 Skills & Tools</h3>
+            <ul class="skills-list">
+              <li>HTML & CSS</li>
+              <li>JavaScript & DOM Manipulation</li>
+              <li>Responsive Web Design</li>
+              <li>UI/UX Design Principles</li>
+              <li>Git & GitHub</li>
+            </ul>
+
+            <h3>🎯 Interests</h3>
+            <p>Apart from coding, I enjoy exploring new technologies, designing creative projects, and sharing knowledge with others.</p>
+
+            <button id="projectsBtn2">See My Projects</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Alhamed Cebrano</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>

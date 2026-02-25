@@ -3,38 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lebron James | Portfolio</title>
+  <title>Alhamed Cebrano | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Lebron James</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Alhamed Cebrano</div>
+        <ul class="nav-links">
+          <li><button id="homeBtn">Home</button></li>
+          <li><button id="aboutBtn">About</button></li>
+          <li><button id="projectsBtn">Projects</button></li>
+          <li><button id="contactBtn">Contact</button></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Hello, I'm Lebron James</h1>
-        <p>Web Developer | Creating modern, clean, and interactive websites</p>
-        <a href="about.html" class="btn">Learn More</a>
-      </div>
-      <div class="hero-image">
-        <img src="hero-image.svg" alt="Hero Image">
-      </div>
-    </section>
-  </main>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Hello, I'm Alhamed Cebrano</h1>
+        <p>Web Developer | I create modern and responsive websites</p>
+        <div class="hero-buttons">
+          <button id="learnMoreBtn">Learn More</button>
+          <button id="projectsBtn2">See Projects</button>
+        </div>
+      </section>
 
-  <footer>
-    <p>&copy; 2026 Lebron James</p>
-  </footer>
+      <!-- Features / Quick Info -->
+      <section class="home-features fade-in">
+        <div class="feature-card">
+          <h3>Clean Design</h3>
+          <p>Modern and minimal interfaces that look great on any device.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Responsive</h3>
+          <p>Websites that automatically adapt to desktop, tablet, and mobile screens.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Interactive</h3>
+          <p>Engaging UI with smooth animations and hover effects.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2026 Alhamed Cebrano</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
